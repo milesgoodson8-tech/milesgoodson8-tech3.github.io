@@ -1,0 +1,458 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Final Project</title>
+		<style type= "text/css">		
+			
+			@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Domine:wght@400..700&family=Prosto+One&display=swap');
+
+
+			
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1.15;
+				background-color: #646464;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			header{
+				background-color: #383838;
+			}
+			
+			h1{
+				/*border: 3px solid blue;*/
+				font-size: 3em;
+				font-family: Prosto One;
+				letter-spacing: .07em;
+				line-height: 1;
+				padding: 1%;
+				color: #F7F7F7;
+				width: 80%;
+				margin: auto;
+				text-align: left;
+			}
+			
+			nav{
+				background-color: #232323;
+				width: 100%;
+				margin-left: 0%;
+				margin-top: -1px;
+				padding: 0; 
+				position: sticky;
+				top: 0;
+				z-index: 2;
+			}
+			
+			nav ul{
+				/*border: 3px solid black;*/
+				width: 60%;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				padding: 0;
+			}
+			
+			.link{
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+			}
+			
+			nav a{
+				display: block;
+				padding: 10%;
+				font-size: 1.1em;
+				font-family: Bree Serif;
+				color: #F7F7F7;
+				text-decoration: none;
+			}
+			
+			nav a:hover{
+				background-color: #383838;
+				color: #F7F7F7;
+			}
+			
+			.current{
+				background-color: #646464;
+				color: #F7F7F7;
+			}
+			
+			#wrap{
+				/*border: 3px dotted green;*/
+				width: 80%;
+				margin: auto;
+				background-color: #F7F7F7;
+				overflow: hidden;
+			}
+			
+			#quote{
+				/*border: 3px double pink;*/
+				width: 60%;
+				margin: 4% auto;
+				padding: 8% 18%;
+				background-image: url('sunraytrees2.jpg');
+				background-size: cover;
+			}
+			
+			blockquote{
+				background-color: #232323;
+				color: #F7F7F7;
+				font-size: 2em;
+				line-height: 1.4em;
+				font-family: Prosto One;
+				padding: 4%;
+				clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+			}
+			
+			blockquote:before{
+				content: "\201C";
+				vertical-align: -.37em;
+				line-height: .1em;
+				font-size: 4em;
+				color: #74BC63;
+				
+			}
+			
+			blockquote cite{
+				/*border: 3px solid black;*/
+				display: block;
+				text-align: right;
+				margin: 2%;
+				color: #74BC63;
+			}
+			
+			#top-pic{
+				width: 60%;
+				margin: 5% auto;
+				padding: 2% 2% 0 2%;
+				background-color: #383838;
+			}
+			
+			figcaption{
+				font-size: .6em;
+				font-family: Domine;
+				color: #F7F7F7;
+			}
+			
+			figcaption p{
+				text-indent: 0em;
+			}
+			
+			.sidebar-1{
+				width: 45%;
+				padding: 1%;
+				float: right;
+				background-color: #383838;
+			}
+			
+			.main-1{
+				width: 90%;
+				margin: auto;
+			}
+			
+			img{
+				width: 100%;
+				margin: auto;
+			}
+			
+			h2{
+				/*border: 3px dotted skyblue;*/
+				font-weight: heavy;
+				font-size: 2.5em;
+				font-family: Bree Serif;
+				padding: 2% 2% 2% 3%;
+				color: #E74345;
+				background-color: #232323;
+				clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+			}
+			
+			p{
+				padding: 2% 1%; 
+				font-size: 1.4em;
+				font-family: Domine;
+				letter-spacing: 1px;
+				text-indent: 3em;
+				
+			}
+			
+			#first{
+				width: 70%;
+				margin: auto; 
+			}
+			
+			#main{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				clear: left;
+				/*border: 3px dotted green;*/
+			}
+			
+			#sidebar{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				/*border: 3px solid black;*/
+			}
+
+			.clear{
+				clear: left;
+			}
+			
+			h3{
+				/*border: 3px solid blue;*/
+				width: 45%;
+				margin: auto;
+				background-color: #646464;
+				text-align: center;
+				color: #F7F7F7;
+				padding: .8%;
+				clip-path: polygon(1% 0, 100% 0, 99% 100%, 0 100%);
+			}
+			
+			#foot{
+				background-color: #383838;
+				width: 80%;
+				margin:  1% auto;
+				clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%);
+				padding: 0;
+				overflow: hidden;
+			}
+			
+			#footer-left{
+				/*border: 3px dotted green;*/
+				width: 100%;
+				padding: 1% 0 0 1%;
+			}
+			
+			#slant{
+				width: 49%;
+				height: 200px;
+				border-right: 20px solid #232323;
+				overflow: hidden;
+				float: left;
+				transform: skewX(15deg);
+				padding: 0;
+				margin; 0;
+			}
+			
+			#footer-right{
+				/*border: 3px dotted yellow;*/
+				width: 45%;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.footer-text{
+				/*border: 3px solid blue;*/
+				text-indent: 0;
+				text-align: left;
+				font-size: .9em;
+				font-family: Prosto One;
+				color: #E74345;
+				margin: 3% 0 0 9%;
+				width: 50%;
+				padding: 1.5%;
+			}
+			
+			.footer-links{
+				/*border: 3px solid white;*/
+				margin-left: 20%;
+				width: 50%;
+				line-height: 1.3;
+			}
+			
+			#footer-left .footer-links, #footer-left .footer-text{
+				transform: skewX(-15deg);
+			}
+			
+			#footer-right .footer-links{
+				margin-left: 24%;
+			}
+			
+			.footer-links a{
+				text-decoration: none;
+				font-family: Domine;
+				font-size: .8em;
+				color: #74BC63;
+			}
+			
+			.footer-links a:hover{
+				text-decoration: underline;
+			}
+			
+			footer{
+				clear: left;
+				padding: 3%;
+				background-color: #232323;
+				
+			}
+			
+			/* 
+				-----Fonts-----
+				h2, nav: Bree Serif
+				quote, h1: Prosto One
+				p, links: Domine
+			
+				-----Colors-----
+				Off-white: #F7F7F7
+				Dark-gray: #232323
+				Medium-gray: #383838
+				Light-gray: #646464
+				Green: #74BC63
+				Red: #E74345
+			*/
+			
+		</style>
+	</head>
+
+	<body>			
+			<header>
+				<h1>PHOTOGRAPHY</h1>
+			</header>				
+			<nav>
+				<ul>
+					<li class="link"><a href="index.html">Home</a></li>
+					<li class="link"><a href="People.html">People</a></li>
+					<li class="link"><a href="Macrophotography.html">Macrophotography</a></li>
+					<li class="link"><a class="current" href="Landscapes.html">Landscapes</a></li>
+					<li class="link"><a href="Stars.html">Stars</a></li>
+				</ul>
+			</nav>
+		<div id="wrap">
+		<figure id = "top-pic">
+			<img src="landscape-2.webp" />
+			<figcaption>
+				<p>
+					Fog over Yosemite valley
+				</p>
+			</figcaption>
+		</figure>
+		<div id ="first">
+			<article>
+				<h2>Landscapes</h2>
+				<p>
+					Composition is the overall layout of your photograph or where different elements are relative to one another. Creating an engaging and pleasing composition can be very difficult and this is something I’m always trying to improve on. Sometimes, if you simply take 5 steps to the left it can drastically change and transform the image you're capturing.
+				</p>
+				<p>
+					A good place to start is the classic rule of thirds. If you’re new to landscape photography or are having trouble deciding on a composition this is a great thing to fall back on. I often put the horizon in my scene on one of the horizontal lines and often put subjects of interest on one of the 4 intersections. The rule of thirds definitely works but I often try to stray away from this and mix it up once I’ve taken a couple shots.  
+				</p>
+				<p>
+					Another thing I like to do in landscape photography is to add depth to my images. Instead of just showing a faraway mountain with the sky behind it and nothing else maybe try adding some foreground elements as well. You could show some rocks or plants on the ground, or you could frame your image with some tree branches. This is a great way to make your photo more immersive and engaging.
+				</p>
+				<p>
+					You can also utilize elements of the scene your capturing to create leading lines. This is a great way to direct or control how someone views your image. For instance your could have some roots or logs on the ground pointing towards a mountain in the background or you could have a shoreline pointing towards the subject of your image. Leading lines can be very powerful and effective tools in landscape photography.
+				</p>
+			</article>
+		</div> 
+		<div id="main">
+			<article>
+				<h2>Lenses</h2>
+				<p>
+					Unlike wildlife photography where everyone’s almost exclusively using using high focal length telephoto lenses, landscape photography is often much more about using wide angle lenses. Instead of capturing small or far away subjects, Landscape photography usually focuses on capturing large settings and environments. Of course you can capture some very compelling landscape shots with telephoto lenses (I do it all the time) but I usually like to start wide to capture the entire scene before me.
+				</p>
+				<p>
+					Want to capture the trees in the foreground, the lake behind them, the mountains in the distance, and the sky all in one photo? You’ll need a wide-angle lens for sure.
+				</p>
+				<figure>
+					<img src="landscape-3.jpg" />
+				</figure>
+				<p>
+					I use a 15-35mm lens most of the time and I love it. That being said, I sometimes find myself wanting to go tighter than 35mm. For this I have my trusted 24-105mm lens that I use quite often as well. If you go really wide, you may get some image distortion especially on the edges of your frame. I have an 8mm fisheye lens and this is an extreme example of how images can be significantly warped with wide-angle glass.
+				</p>
+				<p>
+					In addition to using the proper lens for your landscape shots you can also experiment with lens filters. Both polarized and neutral density filters are very popular in landscape photography. Polarized filters help reduce glare from light or water and neutral density filters allow you to achieve slower shutter speeds even if it’s bright out. There are also more exotic filters like graduated ND filters which gradually change darkness. These can be used if the sky is bright, and the land is dark during a sunset or sunrise.
+				</p>
+			</article>
+			</div> <!--main-->
+			<div id="sidebar">
+				<article>
+					<h2>Timing</h2>
+					<p>
+						Take your time! You may be excited to get to the next location on your shot list, or clouds might be moving in to mess up the lighting. Regardless of circumstances, slow down, get everything set up right and don’t rush yourself.
+					</p>
+						<figure class="sidebar-1">
+							<img src="landscape-1.jfif"/>
+						</figure>
+					<p>
+						It's always a good idea to get to your desired location before you think you need to be there. If you anticipate great lighting or clouds in a specific location, get there before you think this will happen so that you have ample time to set up. Get your camera settings dialed in, make sure your camera is stable, make sure you have the right composition for the shot and then when you’re 100% ready start taking photos.
+					</p>
+				</article>
+			</div> <!--sidebar-->
+		</div>	<!--wrap-->
+		<footer>
+			<h3>
+					Miles Goodson - CSCI 1020 - Final Project
+			</h3>
+			<div id="foot">
+				<div id="slant">
+					<div id="footer-left">
+						<p class="footer-text">
+							Not original text. Source:
+						</p>
+						<ul class="footer-links">
+							<li><a href="https://backcountryjourneys.com/10-Landscape-Photography-Tips-for-the-Perfect-Shot?utm_source=google&utm_campaign=pmax&utm_medium=cpc&utm_term=&gad_source=1&gad_campaignid=21295399431&gbraid=0AAAAAD2fFaPy9wL91d4sqOtrg2DsUxnmJ&gclid=Cj0KCQjwjL3HBhCgARIsAPUg7a6_WfEYztAjUu9IUj4Kx34KtVeVjg8mQiLi_mw-K-uRogPBgLpH7JgaAlV7EALw_wcB">backcountryjourneys.com</a></li>
+						</ul>
+					</div> <!--footer-left-->
+				</div> <!--slant-->
+				<div id="footer-right">
+					<!-- <p class="footer-text">
+						some text
+					</p>
+					<ul class="footer-links">
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+					</ul> -->
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>

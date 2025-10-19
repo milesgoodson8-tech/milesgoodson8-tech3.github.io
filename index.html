@@ -1,0 +1,408 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Final Project</title>
+		<style type= "text/css">		
+			
+			@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Domine:wght@400..700&family=Prosto+One&display=swap');
+
+
+			
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1.15;
+				background-color: #646464;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			header{
+				background-image: url('star-pic.jpg');
+				background-size: cover;
+				/*background-position: center;*/
+			}
+			
+			h1{
+				/*border: 3px solid blue;*/
+				font-size: 8em;
+				font-family: Prosto One;
+				letter-spacing: .07em;
+				color: #F7F7F7;
+				width: 80%;
+				margin: auto;
+				padding: 2% 0;
+				text-align: center;
+			}
+			
+			nav{
+				background-color: #232323;
+				width: 100%;
+				margin-left: 0%;
+				margin-top: -1px;
+				padding: 0; 
+				position: sticky;
+				top: 0;
+				z-index: 2;
+			}
+			
+			nav ul{
+				/*border: 3px solid black;*/
+				width: 60%;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				padding: 0;
+			}
+			
+			.link{
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+			}
+			
+			nav a{
+				display: block;
+				padding: 10%;
+				font-size: 1.1em;
+				font-family: Bree Serif;
+				color: #F7F7F7;
+				text-decoration: none;
+			}
+			
+			nav a:hover{
+				background-color: #383838;
+				color: #F7F7F7;
+			}
+			
+			.current{
+				background-color: #646464;
+				color: #F7F7F7;
+			}
+			
+			#wrap{
+				/*border: 3px dotted green;*/
+				width: 80%;
+				margin: auto;
+				background-color: #F7F7F7;
+				overflow: hidden;
+			}
+			
+			#quote{
+				/*border: 3px double pink;*/
+				width: 60%;
+				margin: 4% auto;
+				padding: 8% 18%;
+				background-image: url('sunraytrees2.jpg');
+				background-size: cover;
+			}
+			
+			blockquote{
+				background-color: #232323;
+				color: #F7F7F7;
+				font-size: 2em;
+				line-height: 1.4em;
+				font-family: Prosto One;
+				padding: 4%;
+				clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+			}
+			
+			blockquote:before{
+				content: "\201C";
+				vertical-align: -.37em;
+				line-height: .1em;
+				font-size: 4em;
+				color: #74BC63;
+				
+			}
+			
+			blockquote cite{
+				/*border: 3px solid black;*/
+				display: block;
+				text-align: right;
+				margin: 2%;
+				color: #74BC63;
+			}
+			
+			.sidebar-1{
+				width: 50%;
+				padding: .5%;
+				float: right;
+			}
+			
+			.main-1{
+				width: 90%;
+				margin: auto;
+			}
+			
+			img{
+				width: 100%;
+				margin: auto;
+			}
+			
+			h2{
+				/*border: 3px dotted skyblue;*/
+				font-weight: heavy;
+				font-size: 2.5em;
+				font-family: Bree Serif;
+				padding: 2% 2% 2% 3%;
+				color: #E74345;
+				background-color: #232323;
+				clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+			}
+			
+			p{
+				padding: 2% 1%; 
+				font-size: 1.4em;
+				font-family: Domine;
+				letter-spacing: 1px;
+				text-indent: 3em;
+				
+			}
+			
+			#main{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				clear: left;
+				/*border: 3px dotted green;*/
+			}
+			
+			#sidebar{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				/*border: 3px solid black;*/
+			}
+
+			.clear{
+				clear: left;
+			}
+			
+			h3{
+				/*border: 3px solid blue;*/
+				width: 45%;
+				margin: auto;
+				background-color: #646464;
+				text-align: center;
+				color: #F7F7F7;
+				padding: .8%;
+				clip-path: polygon(1% 0, 100% 0, 99% 100%, 0 100%);
+			}
+			
+			#foot{
+				background-color: #383838;
+				width: 80%;
+				margin:  1% auto;
+				clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%);
+				padding: 0;
+				overflow: hidden;
+			}
+			
+			#footer-left{
+				/*border: 3px dotted green;*/
+				width: 100%;
+				padding: 1% 0 0 1%;
+			}
+			
+			#slant{
+				width: 49%;
+				height: 200px;
+				border-right: 20px solid #232323;
+				overflow: hidden;
+				float: left;
+				transform: skewX(15deg);
+				padding: 0;
+				margin; 0;
+			}
+			
+			#footer-right{
+				/*border: 3px dotted yellow;*/
+				width: 45%;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.footer-text{
+				/*border: 3px solid blue;*/
+				text-indent: 0;
+				text-align: left;
+				font-size: .9em;
+				font-family: Prosto One;
+				color: #E74345;
+				margin: 3% 0 0 9%;
+				width: 50%;
+				padding: 1.5%;
+			}
+			
+			.footer-links{
+				/*border: 3px solid white;*/
+				margin-left: 20%;
+				width: 50%;
+				line-height: 1.3;
+			}
+			
+			#footer-left .footer-links, #footer-left .footer-text{
+				transform: skewX(-15deg);
+			}
+			
+			#footer-right .footer-links{
+				margin-left: 24%;
+			}
+			
+			.footer-links a{
+				text-decoration: none;
+				font-family: Domine;
+				font-size: .8em;
+				color: #74BC63;
+			}
+			
+			.footer-links a:hover{
+				text-decoration: underline;
+			}
+			
+			footer{
+				clear: left;
+				padding: 3%;
+				background-color: #232323;
+				
+			}
+			
+			/* 
+				-----Fonts-----
+				h2, nav: Bree Serif
+				quote, h1: Prosto One
+				p, links: Domine
+			
+				-----Colors-----
+				Off-white: #F7F7F7
+				Dark-gray: #232323
+				Medium-gray: #383838
+				Light-gray: #646464
+				Green: #74BC63
+				Red: #E74345
+			*/
+			
+		</style>
+	</head>
+
+	<body>			
+			<header>
+				<h1>PHOTOGRAPHY</h1>
+			</header>				
+			<nav>
+				<ul>
+					<li class="link"><a class="current" href="index.html">Home</a></li>
+					<li class="link"><a href="People.html">People</a></li>
+					<li class="link"><a href="Macrophotography.html">Macrophotography</a></li>
+					<li class="link"><a href="Landscapes.html">Landscapes</a></li>
+					<li class="link"><a href="Stars.html">Stars</a></li>
+				</ul>
+			</nav>
+		<div id="wrap">
+		<div id ="quote">
+			<blockquote>
+				To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.
+				<cite>- Elliot Erwitt</cite>
+			</blockquote>
+		</div> <!--quote-->
+		<div id="main">
+			<article>
+				<h2>Beautiful</h2>
+				<p>
+					Photography is the art of capturing light with a camera, usually via a digital sensor or film, to create an image. With the right camera equipment, you can even photograph wavelengths of light invisible to the human eye, including UV, infrared, and radio waves.
+				</p>
+				<p>
+					The first permanent photograph was captured in 1826 (some sources say 1827) by Joseph Nicéphore Niépce in France. It shows the roof of a building lit by the sun.
+				<figure class="main-1">
+					<img src="first.jpg" />
+				</figure>
+			</article>
+			</div> <!--main-->
+			<div id="sidebar">
+				<article>
+					<h2>Ubiquitous</h2>
+					<p>
+						Photography is everywhere today, and it can be hard to remember that it wasn’t always that way. Color photography only started to become popular and accessible with the release of Eastman Kodak’s “Kodachrome” film in the 1930s. Before that, almost all photos were monochromatic – although a handful of photographers, toeing the line between chemists and alchemists, had been using specialized techniques to capture color images for decades before. (You’ll find some fascinating galleries of photos from the 1800s or early 1900s captured in full color, worth exploring if you have not seen them already.)
+
+					</p>
+					<p>
+						These scientist-magicians, the first color photographers, are hardly alone in pushing the boundaries of one of the world’s newest art forms. The history of photography has always been a history of people – artists and inventors who steered the field into the modern era.
+					</p>
+				</article>
+			</div> <!--sidebar-->
+		</div>	<!--wrap-->
+		<footer>
+			<h3>
+					Miles Goodson - CSCI 1020 - Final Project
+			</h3>
+			<div id="foot">
+				<div id="slant">
+					<div id="footer-left">
+						<p class="footer-text">
+							Not original text. Source:
+						</p>
+						<ul class="footer-links">
+							<li><a href="https://photographylife.com/what-is-photography">photographylife.com</a></li>
+						</ul>
+					</div> <!--footer-left-->
+				</div> <!--slant-->
+				<div id="footer-right">
+					<!-- <p class="footer-text">
+						some text
+					</p>
+					<ul class="footer-links">
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+					</ul> -->
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>

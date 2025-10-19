@@ -1,0 +1,472 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Final Project</title>
+		<style type= "text/css">		
+			
+			@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Domine:wght@400..700&family=Prosto+One&display=swap');
+
+
+			
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1.15;
+				background-color: #646464;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			header{
+				background-color: #383838;
+			}
+			
+			h1{
+				/*border: 3px solid blue;*/
+				font-size: 3em;
+				font-family: Prosto One;
+				letter-spacing: .07em;
+				line-height: 1;
+				padding: 1%;
+				color: #F7F7F7;
+				width: 80%;
+				margin: auto;
+				text-align: left;
+			}
+			
+			nav{
+				background-color: #232323;
+				width: 100%;
+				margin-left: 0%;
+				margin-top: -1px;
+				padding: 0; 
+				position: sticky;
+				top: 0;
+				z-index: 2;
+			}
+			
+			nav ul{
+				/*border: 3px solid black;*/
+				width: 60%;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				padding: 0;
+			}
+			
+			.link{
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+			}
+			
+			nav a{
+				display: block;
+				padding: 10%;
+				font-size: 1.1em;
+				font-family: Bree Serif;
+				color: #F7F7F7;
+				text-decoration: none;
+			}
+			
+			nav a:hover{
+				background-color: #383838;
+				color: #F7F7F7;
+			}
+			
+			.current{
+				background-color: #646464;
+				color: #F7F7F7;
+			}
+			
+			#wrap{
+				/*border: 3px dotted green;*/
+				width: 80%;
+				margin: auto;
+				background-color: #F7F7F7;
+				overflow: hidden;
+			}
+			
+			#pic-quote{
+				width: 75%;
+				margin: 5% auto;
+				background-color: #383838;
+				overflow: hidden;
+			}
+			
+			.pic-quote-fig{
+				padding: 2% 0 2% 2%;
+				width: 48%;
+				float: left;
+			}
+			
+			blockquote{
+				/*border: 3px solid green;*/
+				width: 40%;
+				float: left;
+			}
+			
+			blockquote{
+				color: #F7F7F7;
+				font-size: 1.8em;
+				line-height: 1.4em;
+				font-family: Prosto One;
+				padding: 4%;
+			}
+			
+			blockquote:before{
+				content: "\201C";
+				vertical-align: -.37em;
+				line-height: .1em;
+				font-size: 4em;
+				color: #74BC63;
+				
+			}
+			
+			blockquote cite{
+				/*border: 3px solid black;*/
+				display: block;
+				text-align: right;
+				margin: 2%;
+				color: #74BC63;
+			}
+			
+			figure{
+				/*border: 3px dotted skyblue;*/
+			}
+			
+			figcaption{
+				font-size: .6em;
+				font-family: Domine;
+				color: #F7F7F7;
+			}
+			
+			figcaption p{
+				text-indent: 0em;
+			}
+			
+			.sidebar-1{
+				width: 50%;
+				padding: .5%;
+				float: right;
+			}
+			
+			.main-1{
+				width: 90%;
+				margin: auto;
+			}
+			
+			img{
+				width: 100%;
+				margin: auto;
+			}
+			
+			h2{
+				/*border: 3px dotted skyblue;*/
+				font-weight: heavy;
+				font-size: 2.5em;
+				font-family: Bree Serif;
+				padding: 2% 2% 2% 3%;
+				margin-bottom: 2%;
+				color: #E74345;
+				background-color: #232323;
+				clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+			}
+			
+			p{
+				padding: 2% 1%; 
+				font-size: 1.4em;
+				font-family: Domine;
+				letter-spacing: 1px;
+				text-indent: 3em;
+				
+			}
+			
+			#first{
+				width: 70%;
+				margin: auto; 
+			}
+			
+			#main{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				clear: left;
+				/*border: 3px dotted green;*/
+			}
+			
+			#sidebar{
+				width: 46%;
+				padding: 2%;
+				float: left;
+				/*border: 3px solid black;*/
+			}
+
+			.clear{
+				clear: left;
+			}
+			
+			h3{
+				/*border: 3px solid blue;*/
+				width: 45%;
+				margin: auto;
+				background-color: #646464;
+				text-align: center;
+				color: #F7F7F7;
+				padding: .8%;
+				clip-path: polygon(1% 0, 100% 0, 99% 100%, 0 100%);
+			}
+			
+			#foot{
+				background-color: #383838;
+				width: 80%;
+				margin:  1% auto;
+				clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%);
+				padding: 0;
+				overflow: hidden;
+			}
+			
+			#footer-left{
+				/*border: 3px dotted green;*/
+				width: 100%;
+				padding: 1% 0 0 1%;
+			}
+			
+			#slant{
+				width: 49%;
+				height: 200px;
+				border-right: 20px solid #232323;
+				overflow: hidden;
+				float: left;
+				transform: skewX(15deg);
+				padding: 0;
+				margin; 0;
+			}
+			
+			#footer-right{
+				/*border: 3px dotted yellow;*/
+				width: 45%;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.footer-text{
+				/*border: 3px solid blue;*/
+				text-indent: 0;
+				text-align: left;
+				font-size: .9em;
+				font-family: Prosto One;
+				color: #E74345;
+				margin: 3% 0 0 9%;
+				width: 50%;
+				padding: 1.5%;
+			}
+			
+			.footer-links{
+				/*border: 3px solid white;*/
+				margin-left: 20%;
+				width: 50%;
+				line-height: 1.3;
+			}
+			
+			#footer-left .footer-links, #footer-left .footer-text{
+				transform: skewX(-15deg);
+			}
+			
+			#footer-right .footer-links{
+				margin-left: 24%;
+			}
+			
+			.footer-links a{
+				text-decoration: none;
+				font-family: Domine;
+				font-size: .8em;
+				color: #74BC63;
+			}
+			
+			.footer-links a:hover{
+				text-decoration: underline;
+			}
+			
+			footer{
+				clear: left;
+				padding: 3%;
+				background-color: #232323;
+				
+			}
+			
+			/* 
+				-----Fonts-----
+				h2, nav: Bree Serif
+				quote, h1: Prosto One
+				p, links: Domine
+			
+				-----Colors-----
+				Off-white: #F7F7F7
+				Dark-gray: #232323
+				Medium-gray: #383838
+				Light-gray: #646464
+				Green: #74BC63
+				Red: #E74345
+			*/
+			
+		</style>
+	</head>
+
+	<body>			
+			<header>
+				<h1>PHOTOGRAPHY</h1>
+			</header>				
+			<nav>
+				<ul>
+					<li class="link"><a href="index.html">Home</a></li>
+					<li class="link"><a class="current" href="People.html">People</a></li>
+					<li class="link"><a href="Macrophotography.html">Macrophotography</a></li>
+					<li class="link"><a href="Landscapes.html">Landscapes</a></li>
+					<li class="link"><a href="Stars.html">Stars</a></li>
+				</ul>
+			</nav>
+		<div id="wrap">
+		<div id="pic-quote">
+			<figure class="pic-quote-fig">
+				<img src="Afghan-Girl.jpg" />
+				<figcaption> 
+					<p>
+						This image, taken by photographer Steve McCurry, appeared on the National Geographic magazine in 1985. It is among the most famous pictures ever taken. 
+					</p>
+				</figcaption>
+			</figure>
+			<blockquote>
+				Most of my photos are grounded in people, I look for the unguarded moment, the essential soul peeking out, experience etched on a person’s face.
+			<cite>- Steve McCurry</cite>
+			</blockquote>
+		</div> <!--pic-quote-->
+		<div id="first">
+			<article>
+				<h2>People Pictures</h2>
+				<p>
+					People pictures fall into two categories: portraits and candid. Either can be made with or without your subject's awareness and cooperation.
+				</p>
+				<p>
+					However near or far your subject, however intimate or distant the gaze your camera casts, you always need to keep in mind the elements of composition and the technique that will best help you communicate what you are trying to say.
+				</p>
+				<p>
+					The most common mistake made by photographers is that they are not physically close enough to their subjects. In some cases this means that the center of interest—the subject—is just a speck, too small to have any impact. Even when it is big enough to be decipherable, it usually carries little meaning. Viewers can sense when a subject is small because it was supposed to be and when it's small because the photographer was too shy to get close.
+				</p>
+				<p>
+					Don't be shy. If you approach people in the right way, they'll usually be happy to have their picture made. It's up to you to break the ice and get them to cooperate. Joke around with them. Tell them why you want to make the picture. Practice with people you know so that you are comfortable; people can sense when you aren't.
+				</p>
+			</article>
+		</div>
+		<div id="main">
+			<article>
+				<h2>Candids</h2>
+				<p>
+					You may want to make photographs of people going about their business—vendors in a market, a crowd at a sports event, the line at a theater. You don't want them to appear aware of the camera. Many times people will see you, then ignore you because they have to concentrate on what they are doing. You want the viewers of the image to feel that they are getting an unguarded, fly-on-the-wall glimpse into the scene.
+				</p>
+				<p>
+					There are several ways to be unobtrusive. The first thing, of course, is to determine what you want to photograph. People you see a stall in a market that is particularly colorful, a park bench in a beautiful setting—whatever has attracted you. Find a place to sit or stand that gives you a good view of the scene, take up residence there, and wait for the elements to come together in a way that will make your image.
+				</p>
+				<figure>
+					<img src="candid.jpg"/>
+				</figure>
+				<p>
+					If you're using a long lens and are some distance from your subject, it will probably be a while before the people in the scene notice you. You should be able to compose your image and get your shot before this happens. When they do notice you, smile and wave. There's a difference between being unobtrusive and unfriendly.
+				</p>
+				<p>
+					Another way to be unobtrusive is to be there long enough so that people stop paying attention to you. If you are sitting at a café order some coffee and wait. As other patrons become engrossed in conversations or the paper, calmly lift the camera to your eye and make your exposure. In most cases, people either won't notice or won't mind. But be judicious. Don't keep firing away and become a nuisance. They will mind. You can also set the camera on the table with a wide-angle lens pointed at your subject and simply press the remote release when the time is right. Modern auto focus and auto exposure cameras make this easy to do as well.
+				</p>
+			</article>
+			</div> <!--main-->
+			<div id="sidebar">
+				<article>
+					<h2>Portraits</h2>
+					<figure>
+						<img src="portrait.jpg"/>
+					</figure>
+					<p>
+						The first order of business is to engage your subject. This is where we all have to learn to overcome our shyness and approach people in an open and friendly manner. Be up front about who you are and what you're doing. Don't just barge into a scene with your cameras blazing. In fact, it is usually best to leave your camera in its bag when you first approach people, so as not to frighten them. Take time to engage the person in conversation, just as you would if you didn't have a camera. Remember the Golden Rule. Think about how you'd feel if someone approached you and wanted to make a photograph. How they did it would determine how you would respond.
+					</p>
+					<p>
+						Wherever you are with your camera, always be on the lookout for those moments when a person's character shines though. If you have a formal portrait session with someone, make some frames of him while he straightens his tie or while she brushes her hair before the formal sitting. Walk back to the car with her and shoot her on the street. If you are on a spring picnic with the family, look for that moment of bliss when your wife leans back, sated, to enjoy the caress of the warm sun. If you're on the street, look for the impatient expression on a pedestrian's face as he waits for the light to change. Always be on the lookout for the telling moment. Every person has a story, and every picture should tell part of that story. 
+					</p>
+					<p>
+						Our family members are the people we photograph most frequently. We record the momentous occasions and the occasional moments. Albums full of baby pictures, first steps, Little League games, Halloweens, Thanksgivings, and weddings mark our passage through time. These photographs are our memories made real and are probably the most important pictures we will ever make or have. You should apply thought and technique just as rigorously, if not more so, to photographing your family as you do to any photo assignment. There is no better group on which to practice photography. No others will be so trusting or willing to indulge your ever present camera, your fumbling around with lights, and your mistakes. When you are photographing strangers, you either get the picture or you don't. There is no going back to a fleeting moment. With your family, you can work on getting a similar moment again, and again, and again.
+					</p>
+				</article>
+			</div> <!--sidebar-->
+		</div>	<!--wrap-->
+		<footer>
+			<h3>
+					Miles Goodson - CSCI 1020 - Final Project
+			</h3>
+			<div id="foot">
+				<div id="slant">
+					<div id="footer-left">
+						<p class="footer-text">
+							Not original text. Source:
+						</p>
+						<ul class="footer-links">
+							<li><a href="https://www.nationalgeographic.com/photography/article/portrait-photography-tip">nationalgeographic.com</a></li>
+						</ul>
+					</div> <!--footer-left-->
+				</div> <!--slant-->
+				<div id="footer-right">
+					<!-- <p class="footer-text">
+						some text
+					</p>
+					<ul class="footer-links">
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Link</a></li>
+					</ul> -->
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>
